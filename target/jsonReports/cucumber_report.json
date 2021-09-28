@@ -1,0 +1,262 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-27T12:16:47.099Z",
+        "line": 14,
+        "name": "Adding a New Place on Google Maps",
+        "description": "",
+        "id": "add-place-in-google-maps;adding-a-new-place-on-google-maps;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1153000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add Place Payload with \"AAhouse\" \"English\" \"World Cross Center\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AAhouse\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"World Cross Center\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1568000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User calls \"addPlaceAPI\" with \"post\" Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "addPlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "post",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.user_calls_something_with_post_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The API Call is success with status code 200",
+            "match": {
+              "location": "stepDefinitions.stepDefinition.the_api_call_is_success_with_status_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 538000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 1
+                },
+                {
+                  "val": "APP",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-27T12:16:50.458Z",
+        "line": 19,
+        "name": "Verifying the GET API Functionality",
+        "description": "",
+        "id": "add-place-in-google-maps;verifying-the-get-api-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Get Place Payload",
+            "match": {
+              "location": "stepDefinitions.stepDefinition.get_place_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2250000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User calls \"getPlaceAPI\" with \"get\" Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "getPlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "get",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.user_calls_something_with_post_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The API Call is success with status code 200",
+            "match": {
+              "location": "stepDefinitions.stepDefinition.the_api_call_is_success_with_status_code_200()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-27T12:16:52.711Z",
+        "line": 25,
+        "name": "Verifying the DELETE API Functionality",
+        "description": "",
+        "id": "add-place-in-google-maps;verifying-the-delete-api-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Delete Place Payload",
+            "match": {
+              "location": "stepDefinitions.stepDefinition.delete_place_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3060000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User calls \"deletePlaceAPI\" with \"post\" Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "deletePlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "post",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.user_calls_something_with_post_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The API Call is success with status code 200",
+            "match": {
+              "location": "stepDefinitions.stepDefinition.the_api_call_is_success_with_status_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Add Place in Google Maps",
+    "description": "",
+    "id": "add-place-in-google-maps",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/GoogleAPIs.feature",
+    "tags": []
+  }
+]
