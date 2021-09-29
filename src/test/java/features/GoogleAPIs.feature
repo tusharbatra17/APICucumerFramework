@@ -1,5 +1,6 @@
 Feature: Add Place in Google Maps
 
+@Regression
 Scenario Outline: Adding a New Place on Google Maps
 Given Add Place Payload with "<name>" "<language>" "<address>"
 When User calls "addPlaceAPI" with "post" Request
@@ -15,7 +16,7 @@ Examples:
 #	| BBhouse | French     | Sea Cross Center   |
 	
 	
-
+@Regression
 Scenario: Verifying the GET API Functionality
 Given Get Place Payload
 When User calls "getPlaceAPI" with "get" Request
