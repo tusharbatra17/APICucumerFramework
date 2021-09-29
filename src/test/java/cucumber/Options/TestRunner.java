@@ -9,6 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/java/features",
 		plugin = "json:target/jsonReports/cucumber_report.json",
+		tags = "@Regression",
 		glue = "stepDefinitions")
 public class TestRunner {
 

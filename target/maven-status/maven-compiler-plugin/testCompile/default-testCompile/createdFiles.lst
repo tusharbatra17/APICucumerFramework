@@ -1,6 +1,6 @@
-resources\TestDataBuild.class
-resources\Utils.class
 bdd\APIFramework\AppTest.class
 stepDefinitions\stepDefinition.class
 resources\APIResources.class
+resources\TestDataBuild.class
+resources\Utils.class
 cucumber\Options\TestRunner.class
