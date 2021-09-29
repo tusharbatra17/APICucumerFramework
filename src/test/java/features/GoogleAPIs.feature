@@ -1,6 +1,6 @@
 Feature: Add Place in Google Maps
 
-@Regression
+@Regression @Add
 Scenario Outline: Adding a New Place on Google Maps
 Given Add Place Payload with "<name>" "<language>" "<address>"
 When User calls "addPlaceAPI" with "post" Request
@@ -16,13 +16,13 @@ Examples:
 #	| BBhouse | French     | Sea Cross Center   |
 	
 	
-@Regression
+@Regression @Get
 Scenario: Verifying the GET API Functionality
 Given Get Place Payload
 When User calls "getPlaceAPI" with "get" Request
 Then The API Call is success with status code 200
 
-
+@Delete
 Scenario: Verifying the DELETE API Functionality
 Given Delete Place Payload
 When User calls "deletePlaceAPI" with "post" Request
